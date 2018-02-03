@@ -1,0 +1,14 @@
+What is Convex Hull ?
+
+-Convex Hull is hull with properties that every point is either on the line of Hull or within it.Otherwise stated, there is no point which
+lies out of the hull.There is varius algorithm for obtaining convex hull, some of them are: Chan's algorithm, Graham Scan,Jarvis march
+QuickHull, simple "Divide-and-conquer" recursive algorithm and so on. Every mentioned algorithm is more or less iterative by its nature
+only QuickHull and simple "D-A-C" are recursive algorithms.
+
+How does it works? 
+
+-It works using some basic math ideas from Calculus 2 and Vectors like Cross,Dot product or unit vectors.Using this ideas algorithm 
+calculate which point lies where in space, and from varius option, it choose the right one in order to obtain every one of them and the end.
+For example, Cross product funtions use 3 points(A,B,C) and firstly gets 2 vectors from them(AB,AC).Secondly, algorithm calculate cross
+product for 2 given vectors by given formula, and if the result is positive (>=0) that means vector AC (given point C) lies on the right
+side of vector AB.If the result is negative(<0) it means that vector AC(given point C) lies on the left side of vector AB.
